@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="grid">
+  <div class="case-study grid__item one-whole">
+    <header class="case--header">
+      <h1>{{ page.title }}</h1>
+    </header>
+    
+    <div class="case--nav grid__item one-tenth">
+      <nav>
+        <ul>
+          {% for link in site.case-nav %}
+            {% assign current = nil %}
+            {% if page.permalink == link.url %}
+              {% assign current = 'current' %}
+            {% endif %}
+          
+          <li class="{% if forloop.first %}first{% endif %}{% if forloop.last %}last{% endif %}">
+            <a class="{{ current }}" href="{{ page.permalink }}{{ link.url }}">{{ link.text }}{% if link.text == "About" %} {{ page.client }}{% endif %}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    
+    <article class="case-content">
+      {{ content }}
+    </article>
+  </div>
+</div>

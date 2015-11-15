@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    
+    <body class="{% if page.home == true %}page--home{% else %}page{% endif %}">
+    <div id="top"></div>
+    
+    {% include header.html %}
+
+    <div class="page-content cf">
+      <div class="wrap">
+      {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>

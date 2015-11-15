@@ -1,0 +1,32 @@
+# Site settings
+title: TAMI World
+email: your-email@domain.com
+description: "Brian L. Williams, Management Consulting. Kathmandu & Worldwide. Helping people see."
+baseurl: ""
+url: "http://tamiworld.com"
+img: "/images/"
+js: "/scripts/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+navigation:
+  - text: Home
+    url: /
+  - text: About Brian
+    url: /about-brian-williams/
+  - text: Resources
+    url: /resources-by-brian-williams/
+  - text: Booking & Contact
+    url: /book-brian-williams/
+    
+case-nav:
+  - text: About
+    url: "#about"
+  - text: Case
+    url: "#case"
+  - text: Solutions
+    url: "#solutions"
+    
+placeholder: "placeholder.gif"
