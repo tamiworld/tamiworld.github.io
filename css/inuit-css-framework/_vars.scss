@@ -24,7 +24,7 @@
  * following variables to `true`.
  */
 $use-grids:         true;
-$use-flexbox:       false;
+$use-flexbox:       true;
 $use-columns:       false;
 $use-nav:           true;
 $use-options:       false;
@@ -81,7 +81,7 @@ $desk-start:              1145px;
 $img-path:          "/images/";
 $wrap:              1200px;
 
-// FONTS 
-$txt-hdr:           #2E4652;     
+// FONTS
+$txt-hdr:           #2E4652;
 $txt-body:          #70777E;
 $txt-link:          #79C7EF;

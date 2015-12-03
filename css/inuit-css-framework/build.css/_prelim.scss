@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    BUILD.SCSS
+
+	Overrides for the actual scss
+	we've built.
+
+    * Please remove when we implement
+      the real design
+\*------------------------------------*/
+
+body {
+	background: url("/images/bg-flow-mobile-736.jpg") 0 0 no-repeat fixed;
+	padding: 0 12px;
+}
+
+	.page--home h1 {
+		width: 100%;
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+@media only screen and (max-width: 767px) {
+	.copyright {
+      letter-spacing: 1px;
+      font-weight: lighter;
+      position: relative;
+      top: 0;
+      left: 0;
+  	}
+
+  	.site-footer {
+  		background: none;
+  	}
+}
+
+@media only screen and (min-width: 767px) {
+	body {
+		background: url("/images/bg-flow-flipped.png") 0 140% repeat-x;
+	}
+}
