@@ -4,7 +4,7 @@
 
 /*------------------------------------*\
     $SHARED
-    
+
     @tags
      ^shared__fonts
      ^shared__margins
@@ -31,7 +31,7 @@ h6{
       4. Non-objects
 \*------------------------------------*/
 
-// 1                1                  1 
+// 1                1                  1
 
 html{
     position:relative;
@@ -41,20 +41,20 @@ html{
         width: 90%;
         line-height: 1.15;
     }
-    
+
     h2{
         @include font-size(36px, $line-height:false);
     }
-    
+
     h3{
         @include font-size(28px, $line-height:false);
     }
-    
+
     a{
         padding:3px;
         text-decoration:none;
     }
-    
+
     blockquote{
         padding-left:24px;
         border-left:4px solid pink;
@@ -63,25 +63,25 @@ html{
 // 2                2                  2
 
 
- 
-// 3                3                  3   
+
+// 3                3                  3
 .wrap{
     width:$wrap;
     margin:0 auto;
     position:relative;
 }
-  
+
   .nav{
       margin-bottom: 0;
       position: absolute;
       right: 33px;
       top: 30px;
-      
+
       li{
           margin:0 24px 0 0;
       }
   }
-  
+
   .copyright {
       letter-spacing: 1px;
       font-weight: lighter;
@@ -123,16 +123,16 @@ html{
 }
   .box{
       padding:24px;
-      
+
       &:first-child{
           padding:24px 0 0;
       }
   }
-  
+
   .work{
       margin-top: 48px;
   }
-  
+
   .form{
       margin-bottom:24px;
   }
@@ -154,7 +154,7 @@ html{
   body{
       background: url("#{$img-path}bg-flow-flipped.png") 0 140% repeat-x;
   }
-  
+
     .page h1 {
         margin-top: 75px;
         width: 90%;
@@ -165,11 +165,11 @@ html{
         text-transform: uppercase;
         @include font-size(36px, $line-height:false);
     }
-    
+
     h2{
         font-weight:normal;
     }
-  
+
     .box{
       h2{
           font-weight:lighter;
@@ -178,7 +178,7 @@ html{
           margin-bottom:.5rem;
       }
     }
-    
+
     input {
         height: 36px;
         text-align: center;
@@ -186,7 +186,7 @@ html{
         margin: 1px 0px 0 0;
         padding: 0;
         border-right: 1px solid #D7ECC3;
-    
+
         &:focus{
             outline:none;
             background-color: rgb(49, 139, 185);
@@ -197,35 +197,35 @@ html{
          color:#C7C7C7;
          font-weight:300;
       }
-      
+
       :-moz-placeholder { /* Firefox 18- */
-         color: red;  
+         color: red;
       }
-      
+
       ::-moz-placeholder {  /* Firefox 19+ */
-         color: red;  
+         color: red;
       }
-      
-      :-ms-input-placeholder {  
-         color: red;  
+
+      :-ms-input-placeholder {
+         color: red;
       }
-    
+
     .site-header {
         width: 100%;
         z-index:2;
     }
-    
+
     .nav--scroll{
         position:fixed;
         background-color:#2E4652;
         top:0;
         height:30px;
-        
+
         .nav{
             top:2px;
             position:relative;
             right:auto;
-            
+
             li{
                 margin:0 12px 0 12px;
                 font-size:14px;
@@ -236,45 +236,45 @@ html{
                       color:#EEE;
                   }
               }
-              
+
               .current{
                   color:#EEE;
-                  border-bottom:none;                  
+                  border-bottom:none;
               }
         }
     }
-    
+
     .page--home h1{
         font-weight:300;
     }
-    
+
     a{
         color:$txt-link;
     }
-    
+
     .nav{
       a{
           font-weight: 300;
           font-size: 1em;
           letter-spacing: 2px;
-          text-transform: uppercase;    
+          text-transform: uppercase;
           font-family:$source;
       }
-      
+
       .current,
       a:hover{
           color:$txt-hdr;
           border-bottom:1px solid $txt-link;
       }
     }
-    
+
     .box{
         border-bottom:2px solid $txt-hdr;
     }
     .box__mid{
         background-color:rgba(154, 194, 214, 0.14);
     }
-    
+
       .av-area--video,
       .av-area--audio{
           display:none; // for slideDown/hide/show script
@@ -303,17 +303,18 @@ html{
         .av-area--arrow__r{
             left: 114px;
         }
-    
+
     .box__media{
         z-index:1;
         position:relative;
     }
-    
+
     .site-footer{
         height: 260px;
         width: 100%;
         background: url("#{$img-path}footer.png") 105px 0;
         margin:150px 0 0 0;
+        position: relative;
     }
       .footer--logo{
           margin: 130px 0 0 0;
@@ -324,11 +325,11 @@ html{
           top: -50px;
           left: 333px;
       }
-    
+
 //  3          3          3
 .box__grn{
     background-color:rgba(215, 236, 195, .35);
-    
+
     &>.btn{
         background-color:#FFF;
     }
@@ -352,10 +353,10 @@ html{
     top: -15px;
     left: -22px;
 }
-  
-  
-  
-  
+
+
+
+
 /*------------------------------------*\
     $FONT-DECOR
 \*------------------------------------*/
@@ -402,7 +403,7 @@ html{
     border-top:2px solid pink;
     border-bottom:2px solid pink;
     padding:$base-spacing-unit / 2;
-    
+
     &>blockquote{
         text-indent:0;
         margin-bottom:0;
@@ -434,7 +435,7 @@ html{
     border: 1px solid #2E4652;
     z-index:1;
     display:none;
-    
+
     &>span{
         background: url("#{$img-path}tip-arrow.png") 0 0 scroll no-repeat transparent;
         position:absolute;
@@ -471,7 +472,7 @@ html{
     font-family:$source;
     letter-spacing: 3px;
     text-transform: uppercase;
-    
+
     &:hover{
         background:#C4E9E8;
     }
